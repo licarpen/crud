@@ -20,7 +20,7 @@
     "no-console": "warn",
     "indent": [
       "error",
-      4,
+      2,
       {
         "SwitchCase": 1,
         "ignoreComments": true
