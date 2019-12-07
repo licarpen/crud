@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest --verbose --coverage",
-    "test:watch": "npm runtest -- --watchAll",
+    "test:watch": "npm run test -- --watchAll",
     "lint": "eslint '**/*.js'",
     "start:watch": "nodemon server.js"
   },
