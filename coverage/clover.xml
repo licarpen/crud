@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575679558237" clover="3.2.0">
-  <project timestamp="1575679558237" name="All files">
-    <metrics statements="28" coveredstatements="27" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="8" elements="37" coveredelements="35" complexity="0" loc="28" ncloc="28" packages="3" files="3" classes="3"/>
+<coverage generated="1575681065161" clover="3.2.0">
+  <project timestamp="1575681065161" name="All files">
+    <metrics statements="32" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="10" elements="43" coveredelements="41" complexity="0" loc="32" ncloc="32" packages="3" files="3" classes="3"/>
     <package name="lib">
-      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
       <file name="app.js" path="/Users/home/alchemy/career/crud/lib/app.js">
-        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -23,6 +23,10 @@
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lib.models">
