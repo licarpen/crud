@@ -19,7 +19,21 @@ describe('application routes', () => {
           '_id': '5deaeb87f6fe6952d61701b4',
           'name': 'Bananas and Beatles',
           'crag': 'Afternoon Delight',
-          'grade': 5.13,
+          'grade': 5.12,
+          '__v': 0
+        });
+      });
+  });
+  it('it downgrades a route', () => {
+    return request(app)
+      .put('/update/5deaeb87f6fe6952d61701b4')
+      .send({ grade: 5.12 })
+      .then(res => {
+        expect(res.body).toEqual({
+          '_id': '5deaeb87f6fe6952d61701b4',
+          'name': 'Bananas and Beatles',
+          'crag': 'Afternoon Delight',
+          'grade': 5.12,
           '__v': 0
         });
       });
