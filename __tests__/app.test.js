@@ -13,24 +13,24 @@ describe('application routes', () => {
   });
   it('has finds a climbing route by id', () => {
     return request(app)
-      .get('/5deaeb87f6fe6952d61701b4')
+      .get('/5deaeb0acc0e7852d6cea1e3')
       .then(res => {
         expect(res.body).toEqual({
-          '_id': '5deaeb87f6fe6952d61701b4',
+          '_id': '5deaeb0acc0e7852d6cea1e3',
           'name': 'Bananas and Beatles',
           'crag': 'Afternoon Delight',
-          'grade': 5.12,
+          'grade': 5.13,
           '__v': 0
         });
       });
   });
   it('it downgrades a route', () => {
     return request(app)
-      .put('/update/5deaeb87f6fe6952d61701b4')
+      .put('/update/5deae8e4c3e7bb52d6860636')
       .send({ grade: 5.12 })
       .then(res => {
         expect(res.body).toEqual({
-          '_id': '5deaeb87f6fe6952d61701b4',
+          '_id': '5deae8e4c3e7bb52d6860636',
           'name': 'Bananas and Beatles',
           'crag': 'Afternoon Delight',
           'grade': 5.12,
