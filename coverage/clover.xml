@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575681208016" clover="3.2.0">
-  <project timestamp="1575681208016" name="All files">
-    <metrics statements="29" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="10" elements="40" coveredelements="38" complexity="0" loc="29" ncloc="29" packages="3" files="3" classes="3"/>
+<coverage generated="1575682407871" clover="3.2.0">
+  <project timestamp="1575682407871" name="All files">
+    <metrics statements="32" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="10" elements="45" coveredelements="39" complexity="0" loc="32" ncloc="32" packages="3" files="3" classes="3"/>
     <package name="lib">
-      <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+      <metrics statements="21" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="8"/>
       <file name="app.js" path="/Users/home/alchemy/career/crud/lib/app.js">
-        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+        <metrics statements="21" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="8"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -14,16 +14,19 @@
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lib.models">

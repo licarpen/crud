@@ -1,9 +1,14 @@
 const request = require('supertest');
 const app = require('../lib/app');
 require('../lib/utils/connect')();
+const mongoose = require('mongoose');
 let _id = '';
 
+
 describe('application routes', () => {
+  beforeAll(() => {
+    return mongoose.connection.dropDatabase();
+  });
   it('has a "new" route that allows a user to create new route', () => {
     return request(app)
       .post('/new')
@@ -28,14 +33,14 @@ describe('application routes', () => {
   });
   it('it downgrades a route', () => {
     return request(app)
-      .put('/update/5deae8e4c3e7bb52d6860636')
+      .put(`/update/${_id}`)
       .send({ grade: 5.12 })
       .then(res => {
         expect(res.body).toEqual({
-          '_id': '5deae8e4c3e7bb52d6860636',
+          '_id': _id,
           'name': 'Bananas and Beatles',
           'crag': 'Afternoon Delight',
-          'grade': 5.12,
+          'grade': 5.13,
           '__v': 0
         });
       });
@@ -48,10 +53,17 @@ describe('application routes', () => {
           '_id': _id,
           'name': 'Bananas and Beatles',
           'crag': 'Afternoon Delight',
-          'grade': 5.13,
+          'grade': 5.12,
           '__v': 0
         });
       });
   });
+  it('gets all routes', () => {
+    return request(app)
+      .get()
+      .then(res => {
+        expect(res.body).tohaveLength
+      })
+  })
 });
 
