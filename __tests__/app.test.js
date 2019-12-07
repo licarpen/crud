@@ -58,12 +58,29 @@ describe('application routes', () => {
         });
       });
   });
-  it('gets all routes', () => {
+
+  it('gets all routes', async() => {
+    // seed database with 3 routes
+    await request(app)
+      .post('/new')
+      .send({ name: 'Get Woke', crag: 'Sick City', grade: 5.11 });
+
+    await request(app)
+      .post('/new')
+      .send({ name: 'Go Broke', crag: 'Sick City', grade: 5.13 });
+
+    await request(app)
+      .post('/new')
+      .send({ name: 'Get Swole', crag: 'Sick City', grade: 5.10 });
+    
     return request(app)
-      .get()
+      .get('/')
       .then(res => {
-        expect(res.body).tohaveLength
-      })
-  })
+        expect(res.body).toHaveLength(3);
+        expect(res.body).toContainEqual({ '__v': 0, '_id': expect.any(String), name: 'Get Swole', crag: 'Sick City', grade: 5.10 });
+        expect(res.body).toContainEqual({ '__v': 0, '_id': expect.any(String), name: 'Go Broke', crag: 'Sick City', grade: 5.13 });
+        expect(res.body).toContainEqual({ '__v': 0, '_id': expect.any(String), name: 'Get Woke', crag: 'Sick City', grade: 5.11 });
+      });
+  });
 });
 
