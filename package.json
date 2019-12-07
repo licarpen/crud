@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest --verbose --coverage",
+    "test": "jest --verbose --coverage --detectOpenHandles",
     "test:watch": "npm run test -- --watchAll",
     "lint": "eslint '**/*.js'",
     "start:watch": "nodemon server.js"
