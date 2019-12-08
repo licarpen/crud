@@ -82,5 +82,6 @@ describe('application routes', () => {
         expect(res.body).toContainEqual({ '__v': 0, '_id': expect.any(String), name: 'Get Woke', crag: 'Sick City', grade: 5.11 });
       });
   });
+  mongoose.connection.disconnect();
 });
 
