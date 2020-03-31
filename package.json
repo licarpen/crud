@@ -2,7 +2,7 @@
   "name": "crud",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "lib": "lib"
   },
@@ -10,7 +10,8 @@
     "test": "jest --verbose --coverage --detectOpenHandles",
     "test:watch": "npm run test -- --watchAll --detectOpenHandles",
     "lint": "eslint '**/*.js'",
-    "start:watch": "nodemon server.js"
+    "start": "node",
+    "start:watch": "nodemon"
   },
   "repository": {
     "type": "git",
