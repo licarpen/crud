@@ -1,6 +1,6 @@
 # CRUD
 
-An exercise in building the backend for a basic CRUD application.  Testing completed using jest. 
+An exercise in building the backend for a basic CRUD application.  Climbing routes can be added, deleted, and updated.  Testing completed using jest. 
 
 ## Model
 
